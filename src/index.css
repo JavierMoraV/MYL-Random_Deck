@@ -1,13 +1,62 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  font-family: "Cinzel", sans-serif;
+  background-image: url("./images/background.jpeg");
+  background-position: center;
+}
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#versus {
+  color: white;
+  font-weight: 900;
+  font-size: 1.2em;
 }
+
+.list-decks {
+  list-style: none;
+  padding-left: 0px;
+  padding: 0px 10px;
+}
+
+.list-decks li {
+  text-align: center;
+  display: none;
+}
+
+.list-decks li.show {
+  display: block;
+}
+
+.list-decks li img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.list-decks li p {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.select-deck-again {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.select-deck-again.show {
+  opacity: 1;
+}
+/*code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}*/
