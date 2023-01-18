@@ -8,7 +8,7 @@ function Card({name, imagen}) {
         <ul className="list-decks player-1">
           <li className="raza show">
             <h1>{name}</h1>
-            <img src={imagen} alt="No se pudo cargar la imagen"></img>
+            <img src={imagen} alt="No se pudo cargar la imagenn"></img>
             <p>&nbsp;</p>
           </li>
         </ul>
