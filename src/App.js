@@ -21,7 +21,7 @@ function App() {
         <div className="col-12">
           <div className="d-flex justify-content-center">
             {/* jugador 1 */}
-            <Card name="Jugador 1" imagen={raza_1} show={showBoton} setRaza1={setRaza1}/>
+            <Card name="Jugador 1" player={1} imagen={raza_1} show={showBoton} setRaza1={setRaza1}/>
             
             {/* VS */}
             <div className="align-self-center">
@@ -29,7 +29,7 @@ function App() {
             </div>
 
             {/* jugador 2 */}
-            <Card name="Jugador 2" imagen={raza_2}  show={showBoton} setRaza2={setRaza2}/>
+            <Card name="Jugador 2" player={2} imagen={raza_2}  show={showBoton} setRaza2={setRaza2}/>
           </div>
         </div>
       </div>

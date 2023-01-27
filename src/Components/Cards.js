@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "../index.css";
 import "./Button";
-import selectDecks from './razas.js'
+import selectDeck from './razas.js'
 
-function Card({ name, imagen, show, setRaza1, setRaza2 }) {
+function Card({ name, imagen, show, setRaza1, setRaza2, player }) {
   //const [otroMazo, setOtroMazo] = useState(null)
   return (
     <div className="player-1-wrapper text-center">
@@ -18,9 +18,10 @@ function Card({ name, imagen, show, setRaza1, setRaza2 }) {
         className={`btn btn-success ${show}`}
         data-player="player-1"
         onClick={() => {
-          let mazoRestante = selectDecks();
-          setRaza1(mazoRestante[2][0])
-          setRaza2(mazoRestante[2][1])
+          selectDeck(player)
+          // let mazoRestante = selectDecks();
+          // setRaza1(mazoRestante[2][0])
+          // setRaza2(mazoRestante[2][1])
           
         }}
       >
